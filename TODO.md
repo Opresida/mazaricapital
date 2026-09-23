@@ -3,7 +3,7 @@
 ## Site (curto prazo)
 
 - [ ] Substituir placeholders de imagem por fotos/renders reais:
-  - "FOTO / RENDER — MH-001" (card MAZARI HOUSE)
+  - [x] MAZARI HOUSE — foto da casa em site/img/mh-001-casa.jpg (selo EXEMPLO ILUSTRATIVO mantido por cima)
   - [x] ALVENARIA — foto em site/img/alvenaria-blocos.jpg
   - [x] MONOLEV — logomarca oficial em site/img/monolev-logo.png (se surgir foto real dos painéis em obra, avaliar troca p/ manter padrão do GABLOK)
 - [x] Vídeo do processo GABLOK: botão no card abre modal com player oficial do YouTube (embed, não cópia; Vimeo do site deles é restrito ao domínio gablok.be)
