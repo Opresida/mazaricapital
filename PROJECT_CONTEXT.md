@@ -19,6 +19,10 @@ Histórico de sessões e estado do projeto. Atualizar ao final de cada sessão r
 
 6. **Divergência intencional do bundle**: no diagrama "SISTEMA MAZARI · AO VIVO" do hero, os ícones genéricos foram trocados a pedido — PARTICIPANTES = pessoas (duas silhuetas), OPERAÇÃO = martelo de construção, RESULTADO = moeda com cifrão. MAZARI permanece com o logo M. Não reverter para as formas geométricas do bundle original.
 
+### Tela de login (/login)
+
+7. **Login criado**: botão "Faça seu login" no header (ao lado do consultor; rótulos encurtam no mobile) → rota `/login/`. Página portada do componente aprovado `MazariLogin.tsx` (preservado em design/components/): animação Fundação 1b no logo, formulário completo, responsiva. Sem backend: envio válido informa "portal em implantação" e direciona ao consultor — decisão consciente de não simular autenticação.
+
 **Decisões em vigor**:
 - Split 75% cotistas / 25% MAZARI sobre o lucro líquido; sem taxa antecipada.
 - Tudo que é exemplo leva selo ILUSTRATIVO; nenhuma projeção como resultado.

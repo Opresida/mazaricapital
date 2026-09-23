@@ -29,6 +29,8 @@
 
 ## SaaS (fases seguintes — ver docs/ e ARCHITECTURE.md)
 
+- [ ] Autenticação real da tela /login (hoje é vitrine: valida campos e direciona ao consultor; componente Next.js pronto em design/components/MazariLogin.tsx com hook onLogin p/ NextAuth/API)
+- [ ] Rota real de "Esqueci minha senha" (hoje aponta p/ contato)
 - [ ] Definir fase 0 do SaaS (sugestão: MAZARI PARTNERS somente-leitura: carteira + diário + documentos)
 - [ ] Modelagem do banco (entidades da spec, veículo-agnóstico)
 - [ ] Autenticação + RBAC + isolamento por organização/unidade

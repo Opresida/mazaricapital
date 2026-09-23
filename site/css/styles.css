@@ -42,3 +42,11 @@ button { font-family: inherit; }
 
 /* Controles do simulador */
 input[type="range"] { width: 100%; accent-color: #52FF9D; }
+
+/* Botões do cabeçalho: rótulo curto em telas estreitas */
+.lbl-short { display: none; }
+@media (max-width: 840px) {
+  .lbl-full { display: none; }
+  .lbl-short { display: inline; }
+  .hdr-btn { padding: 9px 12px !important; }
+}
