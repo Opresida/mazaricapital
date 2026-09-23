@@ -4,7 +4,8 @@
 
 - [ ] Substituir placeholders de imagem por fotos/renders reais:
   - "FOTO / RENDER — MH-001" (card MAZARI HOUSE)
-  - "FOTO · ALVENARIA", "FOTO · PAINÉIS MONOLEV"
+  - "FOTO · ALVENARIA"
+  - [x] MONOLEV — logomarca oficial em site/img/monolev-logo.png (se surgir foto real dos painéis em obra, avaliar troca p/ manter padrão do GABLOK)
   - [x] GABLOK — foto real do bloco em site/img/gablok-bloco.jpg
   - 3 miniaturas do "Diário da operação" (aba Operação MH-001)
 - [ ] CTA "Falar com consultor": apontar para canal real (WhatsApp/formulário) — hoje é âncora `#contato`
