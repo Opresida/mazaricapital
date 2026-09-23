@@ -11,6 +11,10 @@ Histórico de sessões e estado do projeto. Atualizar ao final de cada sessão r
 
 **Estado**: site funcional em `http://localhost:8902` (`python -m http.server 8902` dentro de `site/`). Repositório publicado: **https://github.com/Opresida/mazaricapital** (branch `main`, commit inicial `c1242aa` com tudo). Pendências principais no `TODO.md` (fotos reais, canal do consultor, revisão jurídica, deploy).
 
+### Intro do logo (mesmo dia, mais tarde)
+
+5. **Animação oficial do logo definida**: variação **2c "Sinal → Fundação"** aprovada no Claude Design. Componente canônico Next.js/React/TS preservado em `design/components/MazariIntro.tsx` (para a fase SaaS); portado para JS puro em `site/js/intro.js` e aplicado na abertura do site (overlay no topo do `<body>`). Toca 1x por sessão, clique/Esc pula, respeita reduced-motion. Bundle do site em Downloads conferido: idêntico ao handoff (a correção de alinhamento do logo já estava incluída).
+
 **Decisões em vigor**:
 - Split 75% cotistas / 25% MAZARI sobre o lucro líquido; sem taxa antecipada.
 - Tudo que é exemplo leva selo ILUSTRATIVO; nenhuma projeção como resultado.

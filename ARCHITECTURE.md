@@ -4,9 +4,10 @@
 
 Sem framework, sem build, sem dependências externas de JS. Deployável em qualquer hosting estático (Netlify sem build, publish dir = `site`).
 
-- `site/index.html` — todas as 17 seções, estilos inline (fidelidade 1:1 com o design aprovado) + meta/SEO/favicon.
+- `site/index.html` — todas as 17 seções, estilos inline (fidelidade 1:1 com o design aprovado) + meta/SEO/favicon + overlay da intro.
 - `site/css/styles.css` — base (reset, fontes, cores) e estados de hover.
 - `site/js/app.js` — toda a interatividade em JavaScript puro (IIFE, sem globals).
+- `site/js/intro.js` — intro do logo, variação 2c "Sinal → Fundação" (APROVADA no Claude Design). Port em JS puro do componente canônico `design/components/MazariIntro.tsx` (Next.js/React/TS, reservado para a fase SaaS). Toca 1x por sessão (sessionStorage `mazari-intro-seen`), clique/Esc pula, respeita `prefers-reduced-motion`; timeline: sinal desenha o M → porta com onda → MAZARI sai do desfoque → CAPITAL entra da direita (3,3 s + 0,7 s hold, fade 600 ms).
 - Fontes: Google Fonts (Inter 400/500/600, JetBrains Mono 400/500, Space Grotesk 400–700) — substituem os woff2 embutidos do bundle.
 
 ### Conversão do handoff Claude Design

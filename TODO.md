@@ -18,6 +18,12 @@
 - [ ] Menu mobile (hambúrguer) — hoje o nav rola horizontalmente no mobile, como no design original
 - [ ] Analytics/pixel, se for rodar tráfego
 
+## Marca / animação do logo (2c aprovada)
+
+- [x] Intro 2c na abertura do site (site/js/intro.js, 1x por sessão)
+- [ ] Intro 2c no carregamento do portal (fase SaaS — usar design/components/MazariIntro.tsx)
+- [ ] Manual de marca com a animação oficial
+
 ## SaaS (fases seguintes — ver docs/ e ARCHITECTURE.md)
 
 - [ ] Definir fase 0 do SaaS (sugestão: MAZARI PARTNERS somente-leitura: carteira + diário + documentos)
