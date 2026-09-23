@@ -4,7 +4,8 @@
 
 - [ ] Substituir placeholders de imagem por fotos/renders reais:
   - "FOTO / RENDER — MH-001" (card MAZARI HOUSE)
-  - "FOTO · ALVENARIA", "FOTO · PAINÉIS MONOLEV", "FOTO · BLOCOS GABLOK"
+  - "FOTO · ALVENARIA", "FOTO · PAINÉIS MONOLEV"
+  - [x] GABLOK — foto real do bloco em site/img/gablok-bloco.jpg
   - 3 miniaturas do "Diário da operação" (aba Operação MH-001)
 - [ ] CTA "Falar com consultor": apontar para canal real (WhatsApp/formulário) — hoje é âncora `#contato`
 - [ ] Confirmar e-mail real (rodapé usa `contato@mazaricapital.com.br` como placeholder)
