@@ -30,9 +30,9 @@
 <script src="js/intro.js"></script>
 
 <header style="position:sticky;top:0;z-index:20;background:rgba(2,10,18,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)">
-<div style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:nowrap">
+<div class="hdr-inner" style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:nowrap">
 <a href="#top" style="display:flex;align-items:center;gap:12px;color:#F5F7FA"><svg width="30" height="28" viewBox="0 0 60 56"><polyline points="6,52 6,8 30,30 54,8 54,52" fill="none" stroke="#F5F7FA" stroke-width="7"></polyline><rect x="26" y="40" width="8" height="12" fill="#52FF9D"></rect></svg><div><div style="font-family:'Space Grotesk',sans-serif;font-size:7.5px;letter-spacing:.62em;margin-right:-.62em;color:#91A4B4;text-align:right;margin-bottom:3px;width:78px;height:8px">CAPITAL</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px;letter-spacing:.22em;line-height:1">MAZARI</div></div></a>
-<nav style="display:flex;gap:22px;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;min-width:0;font-size:13.5px">
+<nav class="hdr-nav" style="display:flex;gap:22px;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;min-width:0;font-size:13.5px">
 <a class="nav-a" href="#como-funciona" style="color:#91A4B4">Como funciona</a>
 <a class="nav-a" href="#tecnologias" style="color:#91A4B4">Tecnologias</a>
 <a class="nav-a" href="#simulador" style="color:#91A4B4">Simulador</a>
@@ -104,7 +104,7 @@
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:20px;align-items:start">
 <div id="steps-list" style="display:flex;flex-direction:column;gap:6px"></div>
-<div style="position:sticky;top:90px;background:#06131D;border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4)">
+<div class="step-card" style="position:sticky;top:90px;background:#06131D;border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4)">
 <div style="height:2px;background:#091923"><div id="stepbar" style="height:100%;width:0;background:#52FF9D"></div></div>
 <div style="padding:30px 30px 26px">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:34px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;color:#91A4B4">ETAPA <span id="step-n">01</span> / 09</span><span id="step-status" style="padding:5px 11px;border-radius:999px;background:rgba(82,255,157,.1);color:#52FF9D;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em">CADASTRADA</span></div>
@@ -133,7 +133,7 @@
 <div style="height:240px;position:relative;overflow:hidden"><img src="img/mh-001-casa.jpg" alt="Casa térrea moderna com garagem coberta e paisagismo — exemplo de empreendimento MAZARI HOUSE" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"><span style="position:absolute;top:14px;left:14px;padding:5px 10px;border:1px solid rgba(232,196,104,.5);color:#E8C468;border-radius:6px;font-size:9.5px;font-family:'JetBrains Mono',monospace;letter-spacing:.14em;background:rgba(2,10,18,.6);backdrop-filter:blur(3px)">EXEMPLO ILUSTRATIVO</span></div>
 <div style="padding:24px 24px 26px">
 <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px"><div><div style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600">MAZARI HOUSE — MH-001</div><div style="font-size:13px;color:#91A4B4;margin-top:5px">Manaus/AM · Residencial unifamiliar</div></div><span style="padding:5px 11px;border-radius:999px;background:rgba(82,255,157,.1);color:#52FF9D;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em">ABERTA</span></div>
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);margin-bottom:18px">
+<div class="stat3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);margin-bottom:18px">
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:6px">Capital da operação</div><div data-count="850000" style="font-family:'Space Grotesk',sans-serif;font-size:clamp(18px,2vw,24px);font-weight:500">R$ 850.000</div></div>
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:6px">Comprometido</div><div data-count="680000" style="font-family:'Space Grotesk',sans-serif;font-size:clamp(18px,2vw,24px);font-weight:500">R$ 680.000</div></div>
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:6px">Disponível</div><div data-count="170000" style="font-family:'Space Grotesk',sans-serif;font-size:clamp(18px,2vw,24px);font-weight:500;color:#52FF9D">R$ 170.000</div></div>
@@ -207,7 +207,7 @@
 <div style="display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.08)"><span style="font-weight:600">Lucro líquido</span><span style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:600">R$ 135.000</span></div>
 </div>
 <div style="display:grid;grid-template-columns:3fr 1fr;gap:6px;margin:22px 0 14px;height:12px"><div style="background:#52FF9D;border-radius:6px 0 0 6px"></div><div style="background:#91A4B4;border-radius:0 6px 6px 0"></div></div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div class="split2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
 <div style="padding:18px;background:#091923;border:1px solid rgba(82,255,157,.3);border-radius:12px"><div style="font-size:12px;color:#52FF9D;margin-bottom:6px">75% · Cotistas</div><div style="font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:500">R$ 101.250</div></div>
 <div style="padding:18px;background:#091923;border:1px solid rgba(255,255,255,.08);border-radius:12px"><div style="font-size:12px;color:#91A4B4;margin-bottom:6px">25% · MAZARI</div><div style="font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:500">R$ 33.750</div></div>
 </div>
@@ -227,7 +227,7 @@
 <div style="background:#06131D;border:1px solid rgba(82,255,157,.3);border-radius:18px;padding:26px 28px">
 <div style="font-family:'Space Grotesk',sans-serif;font-size:20px;margin-bottom:10px">Uma pessoa pode ter mais de uma cota.</div>
 <div style="font-size:14.5px;line-height:1.6;color:#91A4B4;margin-bottom:18px">E recebe por todas. No exemplo, quem tem as 2 cotas em destaque:</div>
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+<div class="stat3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:4px">Aporte</div><div style="font-family:'Space Grotesk',sans-serif;font-size:20px">R$ 20.000</div></div>
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:4px">Lucro (2 × 5.062,50)</div><div style="font-family:'Space Grotesk',sans-serif;font-size:20px;color:#52FF9D">R$ 10.125</div></div>
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:4px">Total ao final</div><div style="font-family:'Space Grotesk',sans-serif;font-size:20px">R$ 30.125</div></div>
@@ -256,7 +256,7 @@
 <div style="padding:24px;background:#020A12;border:1px solid rgba(255,255,255,.08);border-radius:14px;display:flex;flex-direction:column;gap:18px">
 <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:#91A4B4">SEU RESULTADO ESTIMADO</span><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;color:#E8C468">ILUSTRATIVO</span></div>
 <div><div style="font-size:13px;color:#91A4B4;margin-bottom:6px">Seu lucro estimado</div><div id="r-lucro" style="font-family:'Space Grotesk',sans-serif;font-size:clamp(40px,5vw,60px);font-weight:500;letter-spacing:-.03em;line-height:1;color:#52FF9D">R$ 5.062,50</div></div>
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)">
+<div class="stat3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)">
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:4px">Seu aporte</div><div id="r-aporte" style="font-family:'Space Grotesk',sans-serif;font-size:18px">R$ 10.000</div></div>
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:4px">Total ao final</div><div id="r-total" style="font-family:'Space Grotesk',sans-serif;font-size:18px">R$ 15.062,50</div></div>
 <div><div style="font-size:11.5px;color:#91A4B4;margin-bottom:4px">Sobre o aporte</div><div id="r-ret" style="font-family:'Space Grotesk',sans-serif;font-size:18px">50,6%</div></div>
@@ -297,7 +297,7 @@
 <div style="padding:18px;background:#091923;border-radius:12px"><div style="font-size:12px;color:#91A4B4;margin-bottom:8px">Operações ativas</div><div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:500">3</div></div>
 <div style="padding:18px;background:#091923;border-radius:12px"><div style="font-size:12px;color:#91A4B4;margin-bottom:8px">Distribuições recebidas</div><div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:500">1</div></div>
 </div>
-<div style="border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;font-size:14px">
+<div class="tbl-scroll" style="border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;font-size:14px">
 <div style="display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1fr;gap:12px;padding:12px 18px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:#91A4B4;border-bottom:1px solid rgba(255,255,255,.08)"><span>OPERAÇÃO</span><span>ETAPA</span><span>AVANÇO</span><span style="text-align:right">STATUS</span></div>
 <div style="display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1fr;gap:12px;padding:15px 18px;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)"><span>MH-001 · Manaus</span><span style="color:#91A4B4">Fundação</span><div style="height:5px;background:#091923;border-radius:3px"><div data-fill="18" style="width:18%;height:100%;background:#52FF9D;border-radius:3px"></div></div><span style="text-align:right;color:#52FF9D">Em execução</span></div>
 <div style="display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1fr;gap:12px;padding:15px 18px;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)"><span>MH-002 · Manaus</span><span style="color:#91A4B4">Acabamento</span><div style="height:5px;background:#091923;border-radius:3px"><div data-fill="86" style="width:86%;height:100%;background:#52FF9D;border-radius:3px"></div></div><span style="text-align:right;color:#52FF9D">Em execução</span></div>
@@ -322,7 +322,7 @@
 </div>
 </div>
 <div class="portal-panel" data-panel="docs" style="display:none">
-<div style="padding:12px 24px 20px">
+<div class="tbl-scroll" style="padding:12px 24px 20px">
 <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px;padding:12px 0;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:#91A4B4;border-bottom:1px solid rgba(255,255,255,.08)"><span>DOCUMENTO</span><span>CATEGORIA</span><span>VERSÃO</span><span style="text-align:right">DATA</span></div>
 <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px;padding:14px 0;font-size:14px;border-bottom:1px solid rgba(255,255,255,.06)"><span>Matrícula do imóvel</span><span style="color:#91A4B4">Imóvel</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px">v2</span><span style="text-align:right;color:#91A4B4;font-family:'JetBrains Mono',monospace;font-size:12px">12/08/2026</span></div>
 <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px;padding:14px 0;font-size:14px;border-bottom:1px solid rgba(255,255,255,.06)"><span>Contrato da operação</span><span style="color:#91A4B4">Contratos</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px">v1</span><span style="text-align:right;color:#91A4B4;font-family:'JetBrains Mono',monospace;font-size:12px">20/08/2026</span></div>
