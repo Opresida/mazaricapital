@@ -1,0 +1,44 @@
+/* MAZARI CAPITAL — base + estados de interação (hover) convertidos do handoff Claude Design.
+   Os estilos de layout permanecem inline no index.html para fidelidade 1:1 com o design aprovado. */
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #020A12;
+  color: #F5F7FA;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+* { box-sizing: border-box; }
+
+a { color: #52FF9D; text-decoration: none; }
+a:hover { color: #20D98A; }
+
+button { font-family: inherit; }
+
+/* Navegação */
+.nav-a:hover { color: #F5F7FA !important; }
+
+/* Botões sólidos (CTA verde) */
+.btn-solid { transition: transform .2s, background .2s; }
+.btn-solid:hover { background: #20D98A !important; color: #020A12 !important; }
+.btn-lift:hover { transform: translateY(-2px); }
+
+/* Botões fantasma (borda) */
+.btn-ghost { transition: border-color .2s; }
+.btn-ghost:hover { border-color: #52FF9D !important; color: #F5F7FA !important; }
+
+/* Lista de etapas */
+.step-btn:hover { border-color: rgba(82, 255, 157, .5) !important; }
+
+/* Botão pausar/reproduzir */
+.auto-btn:hover { border-color: #52FF9D !important; color: #F5F7FA !important; }
+
+/* FAQ */
+.faq-q:hover { color: #52FF9D !important; }
+
+/* Controles do simulador */
+input[type="range"] { width: 100%; accent-color: #52FF9D; }

@@ -1,0 +1,26 @@
+# TODO — MAZARI CAPITAL
+
+## Site (curto prazo)
+
+- [ ] Substituir placeholders de imagem por fotos/renders reais:
+  - "FOTO / RENDER — MH-001" (card MAZARI HOUSE)
+  - "FOTO · ALVENARIA", "FOTO · PAINÉIS MONOLEV", "FOTO · BLOCOS GABLOK"
+  - 3 miniaturas do "Diário da operação" (aba Operação MH-001)
+- [ ] CTA "Falar com consultor": apontar para canal real (WhatsApp/formulário) — hoje é âncora `#contato`
+- [ ] Confirmar e-mail real (rodapé usa `contato@mazaricapital.com.br` como placeholder)
+- [ ] Revisão jurídica dos textos (disclaimers, SPE/SCP, 75/25) antes de publicar
+- [ ] Git: confirmar com Humberto se já existe repositório/remote antes de `git init`
+- [ ] Deploy Netlify (publish dir `site`, sem build) + domínio
+- [ ] og:image 1200×630 (padrão dos outros projetos)
+
+## Site (desejável)
+
+- [ ] Menu mobile (hambúrguer) — hoje o nav rola horizontalmente no mobile, como no design original
+- [ ] Analytics/pixel, se for rodar tráfego
+
+## SaaS (fases seguintes — ver docs/ e ARCHITECTURE.md)
+
+- [ ] Definir fase 0 do SaaS (sugestão: MAZARI PARTNERS somente-leitura: carteira + diário + documentos)
+- [ ] Modelagem do banco (entidades da spec, veículo-agnóstico)
+- [ ] Autenticação + RBAC + isolamento por organização/unidade
+- [ ] Commission Engine com regras versionadas
