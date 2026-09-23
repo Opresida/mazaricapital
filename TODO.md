@@ -14,7 +14,8 @@
 - [ ] Revisão jurídica dos textos (disclaimers, SPE/SCP, 75/25) antes de publicar
 - [x] Git: repositório publicado em https://github.com/Opresida/mazaricapital (main)
 - [ ] Deploy Netlify (conectar ao repo, publish dir `site`, sem build) + domínio
-- [ ] og:image 1200×630 (padrão dos outros projetos)
+- [x] og:image 1200×630 por rota (home e /login) — fontes em design/og/, PNGs em site/img/, pipeline Chrome headless
+- [ ] Após definir o domínio: trocar og:image/twitter:image para URL absoluta (hoje é raiz-relativa; WhatsApp/Facebook preferem absoluta)
 
 ## Site (desejável)
 

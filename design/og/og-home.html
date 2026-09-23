@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #020A12;
+    background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 64px 64px;
+    color: #F5F7FA;
+    font-family: Inter, sans-serif;
+    position: relative;
+  }
+  .ghost { position: absolute; right: -120px; bottom: -80px; opacity: .05; }
+  .wrap { position: relative; height: 100%; padding: 64px 72px; display: flex; flex-direction: column; justify-content: space-between; }
+  .lockup { display: flex; align-items: center; gap: 18px; }
+  .lockup .cap { font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: .62em; margin-right: -.62em; color: #91A4B4; text-align: right; margin-bottom: 5px; }
+  .lockup .word { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 26px; letter-spacing: .22em; line-height: 1; }
+  .badge { display: inline-flex; align-items: center; gap: 12px; padding: 10px 18px; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 15px; letter-spacing: .12em; color: #91A4B4; margin-bottom: 34px; }
+  .badge i { width: 10px; height: 10px; border-radius: 50%; background: #52FF9D; box-shadow: 0 0 14px rgba(82,255,157,.8); }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 84px; line-height: 1.02; letter-spacing: -.035em; max-width: 900px; }
+  h1 .g { color: #52FF9D; }
+  .sub { font-size: 24px; line-height: 1.5; color: #91A4B4; margin-top: 26px; max-width: 720px; }
+  .strip { display: flex; align-items: center; gap: 26px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: .14em; color: #91A4B4; white-space: nowrap; }
+  .strip .d { color: #52FF9D; }
+</style>
+</head>
+<body>
+  <svg class="ghost" width="620" height="580" viewBox="0 0 60 56"><polyline points="6,52 6,8 30,30 54,8 54,52" fill="none" stroke="#F5F7FA" stroke-width="7"></polyline><rect x="26" y="40" width="8" height="12" fill="#52FF9D"></rect></svg>
+  <div class="wrap">
+    <div class="lockup">
+      <svg width="52" height="49" viewBox="0 0 60 56"><polyline points="6,52 6,8 30,30 54,8 54,52" fill="none" stroke="#F5F7FA" stroke-width="7"></polyline><rect x="26" y="40" width="8" height="12" fill="#52FF9D"></rect></svg>
+      <div>
+        <div class="cap">CAPITAL</div>
+        <div class="word">MAZARI</div>
+      </div>
+    </div>
+    <div>
+      <div class="badge"><i></i>PATRIMÔNIO COM ATIVOS REAIS</div>
+      <h1>Construindo patrimônio com <span class="g">ativos reais.</span></h1>
+      <div class="sub">Terrenos, casas e obras que você pode ver e acompanhar, do começo ao fim.</div>
+    </div>
+    <div class="strip">
+      <span>DOCUMENTOS VERSIONADOS</span><span class="d">◆</span><span>AUDITORIA PERMANENTE</span><span class="d">◆</span><span>MEMÓRIA DE CÁLCULO ABERTA</span>
+    </div>
+  </div>
+</body>
+</html>
