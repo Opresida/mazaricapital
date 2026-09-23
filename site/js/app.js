@@ -290,6 +290,38 @@
     });
   });
 
+  /* ---------------- vídeo GABLOK (modal com player oficial do YouTube) ---------------- */
+  var gbBtn = document.getElementById("gablok-video-btn");
+  if (gbBtn) {
+    gbBtn.addEventListener("click", function () {
+      var ov = document.createElement("div");
+      ov.style.cssText = "position:fixed;inset:0;z-index:10000;background:rgba(2,10,18,.94);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px";
+      ov.innerHTML =
+        '<div style="width:min(960px,100%)">' +
+          '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">' +
+            '<span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;letter-spacing:.14em;color:#91A4B4">GABLOK · COMO FUNCIONA</span>' +
+            '<button id="gb-close" style="background:transparent;border:1px solid rgba(255,255,255,.2);border-radius:8px;color:#F5F7FA;font-family:\'JetBrains Mono\',monospace;font-size:11px;letter-spacing:.1em;padding:7px 12px;cursor:pointer">FECHAR ✕</button>' +
+          '</div>' +
+          '<div style="position:relative;aspect-ratio:16/9;background:#000;border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6)">' +
+            '<iframe src="https://www.youtube-nocookie.com/embed/XBhCoA8KOgo?autoplay=1&rel=0" title="Gablok — An innovative construction system" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen></iframe>' +
+          '</div>' +
+          '<div style="margin-top:10px;font-size:11.5px;color:#91A4B4">Vídeo oficial do canal GABLOK no YouTube. GABLOK é marca de seu fabricante.</div>' +
+        '</div>';
+      document.body.appendChild(ov);
+      var prevOv = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      function closeGb() {
+        if (ov.parentNode) ov.parentNode.removeChild(ov);
+        document.body.style.overflow = prevOv;
+        window.removeEventListener("keydown", onGbKey);
+      }
+      function onGbKey(e) { if (e.key === "Escape") closeGb(); }
+      ov.addEventListener("click", function (e) { if (e.target === ov) closeGb(); });
+      document.getElementById("gb-close").addEventListener("click", closeGb);
+      window.addEventListener("keydown", onGbKey);
+    });
+  }
+
   /* ---------------- FAQ (acordeão) ---------------- */
   $$(".faq-item").forEach(function (item) {
     item.querySelector(".faq-q").addEventListener("click", function () {
