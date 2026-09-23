@@ -23,6 +23,10 @@ Histórico de sessões e estado do projeto. Atualizar ao final de cada sessão r
 
 7. **Login criado**: botão "Faça seu login" no header (ao lado do consultor; rótulos encurtam no mobile) → rota `/login/`. Página portada do componente aprovado `MazariLogin.tsx` (preservado em design/components/): animação Fundação 1b no logo, formulário completo, responsiva. Sem backend: envio válido informa "portal em implantação" e direciona ao consultor — decisão consciente de não simular autenticação.
 
+### Hospedagem (decisão)
+
+8. **Vercel escolhida como casa do projeto** (site estático agora, SaaS Next.js depois — mesmo projeto/URL evolui sem mudança de casa). `vercel.json` na raiz: sem build, outputDirectory `site`, cleanUrls. Fase 0 do SaaS: Next.js full-stack na Vercel + Neon (padrão da casa); NestJS separado só se necessário (aí Render/Fly). OG continua raiz-relativo até existir URL de produção confirmada.
+
 **Decisões em vigor**:
 - Split 75% cotistas / 25% MAZARI sobre o lucro líquido; sem taxa antecipada.
 - Tudo que é exemplo leva selo ILUSTRATIVO; nenhuma projeção como resultado.
