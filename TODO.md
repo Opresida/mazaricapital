@@ -13,8 +13,9 @@
 - [ ] Confirmar e-mail real (rodapé usa `contato@mazaricapital.com.br` como placeholder)
 - [ ] Revisão jurídica dos textos (disclaimers, SPE/SCP, 75/25) antes de publicar
 - [x] Git: repositório publicado em https://github.com/Opresida/mazaricapital (main)
-- [ ] Deploy **Vercel** (decisão 2026-09-23: futuro é Next.js, Vercel é a casa natural; vercel.json já pronto na raiz — importar Opresida/mazaricapital em vercel.com/new e só clicar Deploy)
-- [ ] Domínio (mazaricapital.com.br?) → conectar na Vercel e trocar og:image/twitter:image para URL absoluta + validar no debugger do Facebook
+- [x] Deploy **Vercel**: https://mazaricapital.vercel.app (auto-deploy a cada push na main)
+- [x] OG absoluto apontado para mazaricapital.vercel.app (todas as rotas) + og:url + canonical
+- [ ] Domínio (mazaricapital.com.br?) → conectar na Vercel, trocar og/canonical para o domínio definitivo e validar no debugger do Facebook (developers.facebook.com/tools/debug)
 - [x] og:image 1200×630 por rota (home e /login) — fontes em design/og/, PNGs em site/img/, pipeline Chrome headless
 - [ ] Após definir o domínio: trocar og:image/twitter:image para URL absoluta (hoje é raiz-relativa; WhatsApp/Facebook preferem absoluta)
 
