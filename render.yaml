@@ -1,0 +1,32 @@
+# Blueprint do Render — API do MAZARI CAPITAL (NestJS).
+# Uso: dashboard.render.com → New + → Blueprint → selecionar este repo.
+# Os envVars com sync: false são pedidos na criação (copiar de api/.env).
+services:
+  - type: web
+    name: mazari-capital-api
+    runtime: node
+    rootDir: api
+    plan: free
+    region: ohio # mesma região do Neon (us-east-2) — latência mínima API↔banco
+    buildCommand: npm ci && npm run build
+    startCommand: node dist/main.js
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: NODE_VERSION
+        value: '22'
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 8h
+      - key: R2_ENDPOINT
+        sync: false
+      - key: R2_BUCKET
+        value: mazaricapital
+      - key: R2_ACCESS_KEY_ID
+        sync: false
+      - key: R2_SECRET_ACCESS_KEY
+        sync: false
+      - key: R2_API_TOKEN
+        sync: false
