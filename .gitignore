@@ -1,2 +1,9 @@
 Thumbs.db
 .DS_Store
+
+# api / web
+node_modules/
+dist/
+.next/
+.env
+*.tsbuildinfo
